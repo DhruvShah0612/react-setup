@@ -1,0 +1,131 @@
+.skills {
+    margin-bottom: 4rem;
+}
+
+.skills .heading span {
+    color: rgb(0, 110, 255);
+}
+
+.skills .container {
+    color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: #e5ecfb;
+    transition: 0.2s;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5) !important;
+    background-color: white !important;
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills .container .bar .info img {
+    height: 2em;
+}
+
+.skills .container .bar .info span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1410px) {
+    .skills .container .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skills .container {
+        width: 90%;
+        padding: 1rem;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills .container {
+        padding: 1rem;
+        width: 95%;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .skills .container .bar .info img {
+        height: 1.8em;
+    }
+    .skills .container .bar .info span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills .container {
+        padding: 0;
+        margin: 0;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+    .skills .container {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .skills .container .bar .info img {
+        height: 1.5em;
+    }
+    .skills .container .bar .info span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skills .container {
+        padding: 0.5rem;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .container .bar .info img {
+        height: 1.3em;
+    }
+    .skills .container .bar .info span {
+        font-size: 1rem;
+    }
+}

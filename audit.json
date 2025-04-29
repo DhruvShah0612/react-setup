@@ -1,0 +1,140 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@remix-run/dev": {
+      "name": "@remix-run/dev",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@remix-run/serve",
+        "@remix-run/server-runtime"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-nightly-ff40409-20230514 || >=1.2.0-pre.0",
+      "nodes": [
+        "node_modules/@remix-run/dev"
+      ],
+      "fixAvailable": true
+    },
+    "@remix-run/express": {
+      "name": "@remix-run/express",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@remix-run/node"
+      ],
+      "effects": [
+        "@remix-run/serve"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@remix-run/express"
+      ],
+      "fixAvailable": true
+    },
+    "@remix-run/node": {
+      "name": "@remix-run/node",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@remix-run/server-runtime"
+      ],
+      "effects": [
+        "@remix-run/express",
+        "@remix-run/serve"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@remix-run/express/node_modules/@remix-run/node",
+        "node_modules/@remix-run/node",
+        "node_modules/@remix-run/serve/node_modules/@remix-run/node"
+      ],
+      "fixAvailable": false
+    },
+    "@remix-run/serve": {
+      "name": "@remix-run/serve",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@remix-run/express",
+        "@remix-run/node"
+      ],
+      "effects": [
+        "@remix-run/dev"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@remix-run/serve"
+      ],
+      "fixAvailable": true
+    },
+    "@remix-run/server-runtime": {
+      "name": "@remix-run/server-runtime",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "cookie"
+      ],
+      "effects": [
+        "@remix-run/dev",
+        "@remix-run/node"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@remix-run/node/node_modules/@remix-run/server-runtime",
+        "node_modules/@remix-run/server-runtime"
+      ],
+      "fixAvailable": false
+    },
+    "cookie": {
+      "name": "cookie",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1099846,
+          "name": "cookie",
+          "dependency": "cookie",
+          "title": "cookie accepts cookie name, path, and domain with out of bounds characters",
+          "url": "https://github.com/advisories/GHSA-pxg6-pf52-xh8x",
+          "severity": "low",
+          "cwe": [
+            "CWE-74"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.7.0"
+        }
+      ],
+      "effects": [
+        "@remix-run/server-runtime"
+      ],
+      "range": "<0.7.0",
+      "nodes": [
+        "node_modules/@remix-run/node/node_modules/cookie",
+        "node_modules/cookie"
+      ],
+      "fixAvailable": false
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 6,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 6
+    },
+    "dependencies": {
+      "prod": 739,
+      "dev": 141,
+      "optional": 70,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 949
+    }
+  }
+}

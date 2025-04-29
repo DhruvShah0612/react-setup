@@ -1,0 +1,212 @@
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 50px;
+    z-index: 1;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home .content {
+    flex: 1 1 50rem;
+    padding-top: 1rem;
+    z-index: 1;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    z-index: 1;
+}
+
+.home .image img {
+    width: 60%;
+    margin-left: 6rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home .image img:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home .content h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #002057;
+}
+
+.home .content h2 span {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ff7b00;
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.home .content p span {
+    font-size: 2.5rem;
+    color: rgb(148, 8, 8);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.home .btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.7s;
+    border: 2px solid #B923E1;
+    color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+.home .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.home .btn i {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.home .btn:hover {
+    background: linear-gradient(260deg, #DA7C25 0.36%, #B923E1 102.06%);
+    color: white;
+}
+
+
+/* social icons start */
+
+.socials {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.socials .social-icons li {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 54px;
+    color: #fff;
+    background-color: #09011b;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #0685da;
+}
+
+.social-icons a.github:hover {
+    background-color: #0e0e0e;
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+
+.social-icons a.instagram:hover {
+    background-color: #da2525;
+}
+
+
+/* social icons end */
+
+
+/* hero media queries starts*/
+
+@media (max-width: 1550px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .home .image {
+        order: -1;
+        flex: 0 0 auto;
+        margin-top: 2rem;
+    }
+    .home .content {
+        text-align: center;
+    }
+    .home .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    .home .buttons {
+        display: grid;
+    }
+    .home .btn {
+        padding: 10px 20px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .socials {
+        margin-top: 3rem;
+    }
+}
+
+.container {
+    font-size: 30px;
+}
+
+.home span {
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #DA7C25 10%, #B923E1 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

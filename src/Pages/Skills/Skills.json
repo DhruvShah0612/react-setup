@@ -1,0 +1,93 @@
+[{
+        "name": "HTML5",
+        "icon": "Images/Skills/html.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "Images/Skills/css.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "Images/Skills/javascript.png"
+    },
+    {
+        "name": "jQuery",
+        "icon": "Images/Skills/jquery.png"
+    },
+    {
+        "name": "ReactJS",
+        "icon": "Images/Skills/react.png"
+    },
+    {
+        "name": "Python",
+        "icon": "Images/Skills/python.png"
+    },
+    {
+        "name": "Java",
+        "icon": "Images/Skills/java.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "Images/Skills/mysql.png"
+    },
+    {
+        "name": "SQLite",
+        "icon": "Images/Skills/sqlite.png"
+    },
+    {
+        "name": "Git",
+        "icon": "Images/Skills/git.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "Images/Skills/github.png"
+    },
+    {
+        "name": "Ubuntu",
+        "icon": "Images/Skills/ubuntu.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "Images/Skills/aws.png"
+    },
+    {
+        "name": "Docker",
+        "icon": "Images/Skills/docker.png"
+    },
+    {
+        "name": "Kubernetes",
+        "icon": "Images/Skills/kubernetes.png"
+    },
+    {
+        "name": "Jenkins",
+        "icon": "Images/Skills/jenkins.png"
+    },
+    {
+        "name": "Maven",
+        "icon": "Images/Skills/maven.png"
+    },
+    {
+        "name": "Apache",
+        "icon": "Images/Skills/apache.png"
+    },
+    {
+        "name": "Chef",
+        "icon": "Images/Skills/chef.png"
+    },
+    {
+        "name": "Ansible",
+        "icon": "Images/Skills/ansible.png"
+    },
+    {
+        "name": "Terraform",
+        "icon": "Images/Skills/terraform.png"
+    },
+    {
+        "name": "Grafana",
+        "icon": "Images/Skills/grafana.png"
+    },
+    {
+        "name": "Prometheus",
+        "icon": "Images/Skills/prometheus.png"
+    }
+]

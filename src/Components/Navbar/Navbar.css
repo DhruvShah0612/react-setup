@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.navbar {
+    height: 90px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2fc;
+    align-items: center;
+    box-shadow: 0 3px 10px black;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.menu-icon.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 28%;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+
+.nav-item {
+    font-size: 25px;
+    position: relative;
+}
+
+ul {
+    gap: 10px;
+    margin-right: -130px;
+}
+
+.nav-links {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 1;
+}
+
+.nav-links:hover {
+    color: white;
+    background-color: #007bff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.7s ease-in;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.nav-links.active {
+    color: white;
+    background-color: #007bff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.7s ease-in;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        z-index: 10;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: #bed4f6;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .nav-links {
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+    .nav-links.active {
+        margin-left: 30px;
+        width: 80%;
+    }
+    .nav-links:hover {
+        margin-left: 50px;
+        width: 80%;
+    }
+}

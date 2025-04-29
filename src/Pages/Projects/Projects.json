@@ -1,0 +1,51 @@
+[{
+        "projectImage": "Images/Projects/portfolio.png",
+        "projectTitle": "Personal Portfolio Website",
+        "projectDescription": "A personal portfolio website to showcase my skills, projects, and experiences. Built with HTML, CSS, and JavaScript."
+    },
+    {
+        "projectImage": "Images/Projects/react_ecommerce.png",
+        "projectTitle": "E-Commerce Website",
+        "projectDescription": "A fully functional e-commerce website built using React, featuring user authentication, product pages, shopping cart, about page."
+    },
+    {
+        "projectImage": "Images/Projects/web_agency.png",
+        "projectTitle": "digital agency website",
+        "projectDescription": "A digital agency website offers professional services like web development, app development, and digital marketing."
+    },
+    {
+        "projectImage": "Images/Projects/social_media_dashboard.png",
+        "projectTitle": "Social Media Dashboard",
+        "projectDescription": "A social media analytics dashboard built using HTML5, CSS3, JS and Chart.js. Users can track key metrics like followers, likes, and engagement across various platforms."
+    },
+    {
+        "projectImage": "Images/Projects/weather_app.png",
+        "projectTitle": "Weather Forecast App",
+        "projectDescription": "A weather app that allows users to get current weather conditions and forecast for any location. Built with React, OpenWeatherMap API, and styled with Bootstrap."
+    },
+    {
+        "projectImage": "Images/Projects/invoice_management_tool.png",
+        "projectTitle": "Invoice Management Tool",
+        "projectDescription": "A task management tool that helps users organize and prioritize tasks. Built with Python, Django and a SQLite database."
+    },
+    {
+        "projectImage": "Images/Projects/travel_app.png",
+        "projectTitle": "Travel Booking System",
+        "projectDescription": "A travel booking system where users can search for and book flights, hotels, and rental cars. Built using Laravel and MySQL, with a real-time booking system."
+    },
+    {
+        "projectImage": "Images/Projects/project1.png",
+        "projectTitle": "Real-Time Chat Application",
+        "projectDescription": "A real-time chat application built with Socket.io and Node.js. Features include user login, live messaging, chat rooms, and notifications."
+    },
+    {
+        "projectImage": "Images/Projects/project1.png",
+        "projectTitle": "Expense Tracker",
+        "projectDescription": "A simple expense tracker app built with React that allows users to add, edit, and delete expenses, with visual charts to track spending patterns."
+    },
+    {
+        "projectImage": "Images/Projects/project1.png",
+        "projectTitle": "Food Delivery App",
+        "projectDescription": "A food delivery app prototype designed with React Native, allowing users to browse menus, order food, and track delivery in real-time."
+    }
+]

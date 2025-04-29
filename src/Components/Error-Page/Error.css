@@ -1,0 +1,81 @@
+/* 404 section start */
+
+.page_404 {
+    padding: 40px 0;
+    background: rgb(255, 255, 255);
+    margin-top: 6rem;
+    min-height: 60vh;
+}
+
+.wrapper {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.msg h3 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.msg p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.wrapper h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+/* back button */
+
+.backbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.backbtn .btn {
+    text-align: center;
+    position: relative;
+    padding: 1.8rem 3rem;
+    display: inline;
+    line-height: 0;
+    border-radius: 0.5em;
+    transition: 0.5s;
+    border: 2px solid #B923E1;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    font-family: "Nunito", sans-serif;
+}
+
+.backbtn .btn span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.backbtn .btn i {
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.backbtn .btn:hover {
+    background: linear-gradient(260deg, #DA7C25 0.36%, #B923E1 102.06%);
+    color: white;
+    border: none;
+}
+
+.backbtn .btn:hover i {
+    transform: translateX(-25px);
+}
