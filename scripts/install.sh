@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "Switching to app directory..."
 cd /var/www/html/react
 
-sudo npm i
+npm i
 
-sudo npm run build
+npm run build
