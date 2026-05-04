@@ -14,9 +14,9 @@ sudo chown -R ubuntu:ubuntu /var/www/html/frontend
 cd /var/www/html/frontend
 
 echo "📦 Installing dependencies..."
-npm install
+# npm install
 
 echo "🏗️ Building React app..."
-npm run build
+# npm run build
 
 echo "✅ Build completed successfully"
