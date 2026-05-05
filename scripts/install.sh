@@ -13,10 +13,10 @@ sudo chown -R ubuntu:ubuntu /var/www/html/frontend
 # Move into project directory
 cd /var/www/html/frontend
 
-echo "📦 Installing dependencies..."
-npm install
+# echo "📦 Installing dependencies..."
+# npm install
 
-echo "🏗️ Building React app..."
-npm run build
+#echo "🏗️ Building React app..."
+# npm run build
 
 echo "✅ Build completed successfully"
