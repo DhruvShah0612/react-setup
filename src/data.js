@@ -18,7 +18,7 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "Samsung S7",
+    title: "Samsung S23 pro",
     img: "img/product-2.png",
     price: 16,
     company: "SAMSUNG",
